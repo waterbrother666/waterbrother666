@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 120" width="900" height="120">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#6366F1" fill-opacity=".6"/>
+    </marker>
+  </defs>
+  <style>
+    .pill{fill:#6366F1;fill-opacity:.08;stroke:#6366F1;stroke-width:2}
+    .on{fill:url(#g);opacity:0;animation:lit 4s infinite}
+    .lbl{font:600 20px 'Segoe UI',-apple-system,Helvetica,Arial,sans-serif;fill:#6366F1;animation:txt 4s infinite}
+    .line{stroke:#6366F1;stroke-opacity:.45;stroke-width:2}
+    .dot{fill:#8B5CF6;opacity:0;animation:move 4s infinite}
+    .n1{animation-delay:1s}.n2{animation-delay:2s}.n3{animation-delay:3s}
+    @keyframes lit{0%,24%{opacity:1}25%,100%{opacity:0}}
+    @keyframes txt{0%,24%{fill:#fff}25%,100%{fill:#6366F1}}
+    @keyframes move{0%,17%{opacity:0;transform:translateX(0)}18%{opacity:1;transform:translateX(0)}24%{opacity:1;transform:translateX(64px)}25%,100%{opacity:0;transform:translateX(64px)}}
+  </style>
+
+  <line class="line" x1="190" y1="60" x2="268" y2="60" marker-end="url(#arrow)"/>
+  <line class="line" x1="410" y1="60" x2="488" y2="60" marker-end="url(#arrow)"/>
+  <line class="line" x1="630" y1="60" x2="708" y2="60" marker-end="url(#arrow)"/>
+
+  <circle class="dot" cx="198" cy="60" r="6"/>
+  <circle class="dot n1" cx="418" cy="60" r="6"/>
+  <circle class="dot n2" cx="638" cy="60" r="6"/>
+
+  <rect class="pill" x="50" y="36" width="140" height="48" rx="24"/>
+  <rect class="pill" x="270" y="36" width="140" height="48" rx="24"/>
+  <rect class="pill" x="490" y="36" width="140" height="48" rx="24"/>
+  <rect class="pill" x="710" y="36" width="140" height="48" rx="24"/>
+
+  <rect class="on" x="50" y="36" width="140" height="48" rx="24"/>
+  <rect class="on n1" x="270" y="36" width="140" height="48" rx="24"/>
+  <rect class="on n2" x="490" y="36" width="140" height="48" rx="24"/>
+  <rect class="on n3" x="710" y="36" width="140" height="48" rx="24"/>
+
+  <text class="lbl" x="120" y="61" text-anchor="middle" dominant-baseline="middle">Think</text>
+  <text class="lbl n1" x="340" y="61" text-anchor="middle" dominant-baseline="middle">Plan</text>
+  <text class="lbl n2" x="560" y="61" text-anchor="middle" dominant-baseline="middle">Act</text>
+  <text class="lbl n3" x="780" y="61" text-anchor="middle" dominant-baseline="middle">Done</text>
+</svg>

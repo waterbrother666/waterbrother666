@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" width="1200" height="220">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
+      <stop offset="0" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .w{animation:flow linear infinite}
+    .w1{animation-duration:28s}
+    .w2{animation-duration:18s;opacity:.55}
+    .w3{animation-duration:40s;opacity:.35}
+    @keyframes flow{from{transform:translateX(0)}to{transform:translateX(-2400px)}}
+  </style>
+  <g transform="translate(0 220) scale(1 -1)">
+    <path class="w w3" fill="url(#g)" d="M0 0 V168 Q150 194 300 168 T600 168 T900 168 T1200 168 T1500 168 T1800 168 T2100 168 T2400 168 T2700 168 T3000 168 T3300 168 T3600 168 V0 Z"/>
+    <path class="w w2" fill="url(#g)" d="M0 0 V156 Q150 134 300 156 T600 156 T900 156 T1200 156 T1500 156 T1800 156 T2100 156 T2400 156 T2700 156 T3000 156 T3300 156 T3600 156 V0 Z"/>
+    <path class="w w1" fill="url(#g)" d="M0 0 V142 Q150 162 300 142 T600 142 T900 142 T1200 142 T1500 142 T1800 142 T2100 142 T2400 142 T2700 142 T3000 142 T3300 142 T3600 142 V0 Z"/>
+  </g>
+</svg>
